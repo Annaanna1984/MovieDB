@@ -1,4 +1,3 @@
-import React from "react";
 // import MovieList from "./components/MovieList";
 // export default class App extends React.Component{
 //   state = {
@@ -14,7 +13,7 @@ import React from "react";
 //     );
 //   }
 // }
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Layout, Tabs } from "antd";
 
 import MDBService from "../../service/MDBService";
