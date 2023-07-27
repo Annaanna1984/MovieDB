@@ -17,7 +17,7 @@ const _Card = (prop) => {
     //--------------------------------------------------
     const guestId = useContext(Context);
     //--------------------------------------------------
-    const [rating, setRating] = useState(false);
+    const [rating, setRating ] = useState(false);
 
     useEffect(() => {
         if (!prop.rating) {
@@ -27,7 +27,7 @@ const _Card = (prop) => {
         } else {
             setRating(prop.rating);
         }
-    }, []);
+    }, [guestId, prop.id, prop.rating]);
 
     const handleChangeRating = (vote) => {
         if (vote === 0) {

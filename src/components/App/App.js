@@ -17,20 +17,20 @@
 import { useEffect, useState } from 'react';
 import { Layout, Tabs } from 'antd';
 
-import MDBService from '../service/MDBService';
+import MDBService from '../../service/MDBService';
 
 import Context from '../Context';
-import List from '../List';
+import List from '../List/List';
 import Alert from '../Alert';
-import RatedList from '../RatedList';
-import Spin from '../Spin';
+import RatedList from '../RatedList/RatedList';
+import Spin from '../Spin/Spin';
 
 import './app.css';
 
 const { Content } = Layout;
 
-const App = () => {
-    const [connectionError, setConnectionError] = useState(false);
+const App = () =>       {
+            const [connectionError, setConnectionError] = useState(false);
     const [respondError, setError] = useState(false);
     const [genres, setGenres] = useState();
     const [loading, setLoading] = useState(true);
